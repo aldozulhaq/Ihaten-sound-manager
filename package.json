@@ -1,6 +1,6 @@
 {
   "name": "com.ihaten.sound-manager",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "displayName": "IHaten Sound Manager",
   "description": "Create sound database and manager",
   "unity": "2019.1",
