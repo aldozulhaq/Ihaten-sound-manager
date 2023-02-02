@@ -1,0 +1,24 @@
+{
+  "name": "com.ihaten.sound-manager",
+  "version": "1.0.1",
+  "displayName": "IHaten Sound Manager",
+  "description": "Create sound database and manager",
+  "unity": "2019.1",
+  "author": {
+    "name": "Aldo Izzulhaq | Vorent",
+    "email": "aldoizzulhaq@gmail.com"
+  },
+  "type": "library",
+  "samples": [
+
+    {
+
+      "displayName": "Scripts and Prefabs",
+ 
+      "description": "Sound Database Script and Prefabs",
+ 
+      "path": "Samples~/IhatenSM"
+ 
+    }
+  ]
+}
