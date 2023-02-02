@@ -2,38 +2,31 @@ using UnityEngine;
 
 namespace Ihaten.SoundManager
 {
-    public enum SFX
-    {
-    }
-
-    public enum BGM
-    {
-    }
-
     [System.Serializable]
-    public struct BackgrundMusic
+    public struct BackgroundMusic
     {
-        public BGM type;
+        public SoundType.BGM type;
         public AudioClip audioClip;
     }
 
     [System.Serializable]
-    public struct Soundeffect
+    public struct SoundEffect
     {
-        public SFX type;
+        public SoundType.SFX type;
         public AudioClip audioClip;
     }
 
     [CreateAssetMenu(fileName = "SoundDB", menuName = "Audio/Database")]
     public class SoundDatabase : ScriptableObject
     {
+
         [Header("Background Music")]
-        public BackgrundMusic[] bgm;
+        public BackgroundMusic[] bgm;
 
         [Header("Sound Effect")]
-        public Soundeffect[] sfx;
+        public SoundEffect[] sfx;
 
-        public AudioClip GetClip(SFX sfxType)
+        public AudioClip GetClip(SoundType.SFX sfxType)
         {
             AudioClip temp = null;
             foreach (var i in sfx)
@@ -45,7 +38,7 @@ namespace Ihaten.SoundManager
             return temp;
         }
 
-        public AudioClip GetClip(BGM bgmType)
+        public AudioClip GetClip(SoundType.BGM bgmType)
         {
             AudioClip temp = null;
             foreach (var i in bgm)
